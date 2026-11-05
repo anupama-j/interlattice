@@ -191,5 +191,36 @@ form input,form textarea,form select{width:100%;padding:10px;border:1px solid #b
     <div class="wrap">© 2026 University of Mumbai. All articles are open access under CC BY 4.0. ISSNs and board members other than the Editors-in-Chief are placeholders.</div>
   </div>
 </footer>
+  <main class="wrap" style="padding:40px 20px;max-width:800px;">
+  <section class="card">
+    <h1>Manuscript Submission</h1>
+    <p>Submit your manuscript for consideration by INTERLATTICE.</p>
+
+    <form action="https://research-analytics-website.onrender.com/submit-manuscript"
+          method="POST"
+          enctype="multipart/form-data">
+
+      <label>Author Name</label>
+      <input type="text" name="author_name" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label>Institution / Organization</label>
+      <input type="text" name="institution" required>
+
+      <label>Manuscript Title</label>
+      <input type="text" name="manuscript_title" required>
+
+      <label>Upload Manuscript (Word document)</label>
+      <input type="file" name="manuscript" accept=".doc,.docx" required>
+
+      <button type="submit" class="btn">Submit Manuscript</button>
+    </form>
+  </section>
+</main>
 </body>
 </html>
